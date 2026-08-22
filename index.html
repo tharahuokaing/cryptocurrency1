@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Binance-Style Crypto Market Tracker | Huokaing Thara Trading</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="bank.jpg">
+</head>
+<body>
+
+    <!-- Market Navigation & Header -->
+    <header class="market-header">
+        <div class="logo-area">
+            <h1>⚡ HTB Crypto Exchange</h1>
+            <span class="live-badge">LIVE MARKETS</span>
+        </div>
+        <div class="market-stats">
+            <span>24h Volume: <strong id="totalVolume">$--</strong></span>
+            <span>Status: <strong style="color: #22c55e;">Connected</strong></span>
+        </div>
+    </header>
+
+    <!-- Main Crypto Table Container -->
+    <main class="market-container">
+        <h2>Top 31 Tracked Assets</h2>
+        <p class="subtitle">Real-time market prices, 24h changes, and direct order execution buttons.</p>
+
+        <div class="table-responsive">
+            <table class="crypto-table">
+                <thead>
+                    <tr>
+                        <th>Asset</th>
+                        <th>Price (USD)</th>
+                        <th>24h Change</th>
+                        <th>24h Volume</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="cryptoTableBody">
+                    <!-- Dynamic Rows Will Be Injected Here via JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <!-- Trade Action Modal / Notification Box -->
+    <div id="tradeModal" class="trade-modal" style="display: none;">
+        <div class="trade-modal-content">
+            <h3 id="modalTitle">Order Execution</h3>
+            <p id="modalDesc">Processing transaction...</p>
+            <button id="closeModalBtn" class="btn-primary">Close</button>
+        </div>
+    </div>
+
+    <!-- Script Architecture -->
+    <script src="market.js"></script>
+    <script src="ultra_secure_mode.js"></script>    
+</body>
+</html>
