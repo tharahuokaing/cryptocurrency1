@@ -27,9 +27,8 @@
         price_change_percentage_24h: 0,
         total_volume: 0,
 
-        // Simple built-in logo so no external image is required
-        image:
-            "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Ccircle cx='24' cy='24' r='24' fill='%23f0b90b'/%3E%3Ctext x='24' y='31' text-anchor='middle' font-family='Arial' font-size='20' font-weight='bold' fill='white'%3ET%3C/text%3E%3C/svg%3E"
+        // Updated logo source to tcoin.jpg
+        image: "tcoin.jpg"
     };
 
     /**
@@ -97,7 +96,7 @@
                 <td>
                     <div class="asset-info">
                         <img
-                            src="${coin.image}"
+                            src="${coin.id === 't-coin' ? 'tcoin.jpg' : coin.image}"
                             alt="${coin.name}"
                             width="24"
                             height="24"
